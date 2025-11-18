@@ -1,9 +1,9 @@
-PneuVision <img width="25" height="20" alt="image" src="https://github.com/user-attachments/assets/ae2ef8bd-89a5-49cc-a253-1544fb9d732d" />
-– Pneumonia Detection from Chest X-Ray Images (Deep Learning Project)
+# PneuVision <img width="25" height="40" alt="image" src="https://github.com/user-attachments/assets/ae2ef8bd-89a5-49cc-a253-1544fb9d732d" />
+Pneumonia Detection from Chest X-Ray Images (Deep Learning Project)
 
 A complete, modular, end-to-end AI system for medical image classification
 
-🌟 Project Overview
+# 🌟 Project Overview
 
 PneuVision is an AI-powered pneumonia detection system built using deep learning and transfer learning.
 The model classifies chest X-ray scans as:
@@ -12,9 +12,49 @@ The model classifies chest X-ray scans as:
 
 2)Pneumonia (Bacterial/Viral)
 
+## 📌 Grad-CAM Heatmap Interpretation
+
+### 🎨 What the Heatmap Colors Mean
+
+Grad-CAM highlights the regions the model focuses on when predicting pneumonia.  
+Each color represents a different activation intensity:
+
+#### 🔴🟡 **RED / YELLOW — High Activation**
+- Model is very confident these regions influenced the pneumonia prediction  
+- Indicates:
+  - Consolidation
+  - Infiltrates
+  - Opacity
+  - Fluid build-up  
+- Usually corresponds to blocked or cloudy lung regions
+
+#### 🟢 **GREEN — Medium Activation**
+- Region is important but not decisive  
+- Often mild abnormality or transitional zones
+
+#### 🔵 **BLUE — Low Activation**
+- Model does *not* consider these areas important  
+- Typically:
+  - Clear lungs  
+  - Normal structures  
+  - Ribs / non-lung regions  
+
+#### 🔵🟣 **DARK BLUE / PURPLE — Very Low Activation**
+- Almost zero contribution  
+- Background or irrelevant areas  
+
+---
+
+## 🩺 Interpretation of the Heatmap
+![Heatmap of pneumonia sample](images/8.png)
 
 
-The system includes:
+- **Red/yellow areas** show strong pneumonia-related patterns in central lung regions  
+- **Blue areas** indicate clear/normal regions  
+- Pattern resembles **viral pneumonia**, which often affects central lung fields with diffuse opacities  
+
+
+# The system includes:
 
 1)Full preprocessing pipeline
 
@@ -28,7 +68,7 @@ The system includes:
 
 6)Modular Python package + Colab notebook
 
-🔍 Key Features
+# 🔍 Key Features
 ✔ Complete ML Pipeline (Preprocess → Train → Evaluate → Predict)
 ✔ ResNet50 Transfer Learning (Best Model)
 ✔ Dataset imbalance handling via Class Weights
@@ -38,7 +78,8 @@ The system includes:
 ✔ Colab-ready .ipynb notebook
 ✔ requirements.txt included
 ✔ Automated evaluation + model checkpoints
-📁 Project Structure
+
+# 📁 Project Structure
 ```
 PneuVision/
 │
@@ -65,7 +106,7 @@ PneuVision/
 ├── requirements.txt
 └── PneuVision_AI_Powered_Pneumonia_Detection_final.ipynb
 ```
-📥 Dataset
+# 📥 Dataset
 Kaggle Dataset Used:
 
 Chest X-Ray Images (Pneumonia)
@@ -86,12 +127,12 @@ Place your dataset as:
 The code automatically extracts and prepares images.
 
 
-Install Dependencies
+# Install Dependencies
 
 ```
 pip install -r requirements.txt
 ```
-Add Dataset to Project
+# Add Dataset to Project
 ```
 project/
     chest_xray/
@@ -100,7 +141,7 @@ project/
         val/
 ```
 
-Run the Pipeline
+# Run the Pipeline
 ```
 python main.py
 ```
@@ -245,8 +286,8 @@ Hossain et al., Lightweight CNN for Pneumonia Detection, 2024
 
 Mooney, P., Kaggle Pneumonia Dataset, 2018
 
-❤️ Author
+# ❤️ Author
 
-Darshan Purohit & Chandan Singh ,
+# Darshan Purohit & Chandan Singh ,
 IT | ENGINEER
 GitHub: https://github.com/darshanpurohit20
