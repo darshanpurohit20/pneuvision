@@ -1,30 +1,32 @@
-PneuVision – Pneumonia Detection from Chest X-Ray Images (Deep Learning Project)
+PneuVision <img width="25" height="20" alt="image" src="https://github.com/user-attachments/assets/ae2ef8bd-89a5-49cc-a253-1544fb9d732d" />
+– Pneumonia Detection from Chest X-Ray Images (Deep Learning Project)
 
 A complete, modular, end-to-end AI system for medical image classification
+
 🌟 Project Overview
 
 PneuVision is an AI-powered pneumonia detection system built using deep learning and transfer learning.
 The model classifies chest X-ray scans as:
 
-Normal
+1)Normal
 
-Pneumonia (Bacterial/Viral)
+2)Pneumonia (Bacterial/Viral)
 
 
 
 The system includes:
 
-Full preprocessing pipeline
+1)Full preprocessing pipeline
 
-Training using ResNet50 / VGG16 / Custom CNN
+2)Training using ResNet50 / VGG16 / Custom CNN
 
-Evaluation (Accuracy, Precision, Recall, AUC, Confusion Matrix, PR Curve)
+3)Evaluation (Accuracy, Precision, Recall, AUC, Confusion Matrix, PR Curve)
 
-Sample predictions
+4)Sample predictions
 
-Visualization suite
+5)Visualization suite
 
-Modular Python package + Colab notebook
+6)Modular Python package + Colab notebook
 
 🔍 Key Features
 ✔ Complete ML Pipeline (Preprocess → Train → Evaluate → Predict)
@@ -168,21 +170,24 @@ Achieved ~94% AUC ROC
 
 📊 Visual Results
 📌 1. Data Distribution
-
-
-
-
+![Training Curves](images/1.png)
 📌 2. Training Curves (Accuracy, Loss, Precision, Recall)
+![Training Curves](images/6.png)
 
 📌 3. Confusion Matrix
+![Confusion Matrix](images/2.png)
 
 📌 4. ROC Curve
+![ROC Curve](images/4.png)
 
 📌 5. Precision–Recall Curve
+![Precision-Recall Curve](images/3.png)
 
 📌 6. Sample Predictions
+![Sample Predictions](images/0.png)
 
-📌 7. Example X-Rays (Normal / Bacterial / Viral)
+
+
 
 📈 Performance Summary
 Metric	Score
