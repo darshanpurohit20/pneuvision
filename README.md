@@ -7,7 +7,7 @@ A complete, modular, end-to-end AI system for medical image classification
 
 PneuVision is an AI-powered pneumonia detection system built using deep learning and transfer learning.
 The model classifies chest X-ray scans as:
-
+![Human Anatomy](images/7.png)
 1)Normal
 
 2)Pneumonia (Bacterial/Viral)
@@ -74,8 +74,8 @@ https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 Dataset contains:
 
 Split	Normal	Pneumonia	Total
-Train	1341	3875	5216
-Test	234	390	624
+Train	1341	3875	     5216
+Test	234	    390	          624
 
 If you are using Google Drive:
 Place your dataset as:
